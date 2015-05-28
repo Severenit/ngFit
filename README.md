@@ -13,14 +13,14 @@
 │   │   │   │   │   ├──  main.controller.spec.js
 │   │   │   │   │   └──  main.html
 │   │   │   │   └──  app.js
-│   │   ├──  img/
-│   │   ├──  css/
-│   │   ├──  fonts/
-│   │   ├──  sass/
-│   │   │   ├──  includes/
-│   │   │   │   └──  varibles.scss
-│   │   │   └──  styles.scss
-│   │   └──  index.html
+│   │   │   ├──  img/
+│   │   │   ├──  css/
+│   │   │   ├──  fonts/
+│   │   │   ├──  sass/
+│   │   │   │   ├──  includes/
+│   │   │   │   │   └──  varibles.scss
+│   │   │   │   └──  styles.scss
+│   │   │   └──  index.html
 ├──  bower_components/
 ├──  nodes_modules/
 ├──  .gitignore
