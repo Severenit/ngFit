@@ -1,5 +1,5 @@
+![Building a ngFit App with AngularJS](ngFit.png)
 # Gulp-Project-Angular
-
 <pre>
 ├──  builds/
 │   ├──  development/
