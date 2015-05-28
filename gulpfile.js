@@ -43,9 +43,39 @@ gulp.task('copybootstrap', function() {
   gulp.src('./bower_components/bootstrap/dist/**/*.*')
       .pipe(gulp.dest('./builds/development/libs/bootstrap/'));
 });
+
 gulp.task('copybootstrapmaterialdesign', function() {
   gulp.src('./bower_components/bootstrap-material-design/dist/**/*.*')
       .pipe(gulp.dest('./builds/development/libs/bootstrap-material-design/'));
+});
+
+gulp.task('copyangular', function() {
+  gulp.src('./bower_components/angular/angular.js')
+      .pipe(gulp.dest('./builds/development/libs/angular/'));
+
+  gulp.src('./bower_components/angular-animate/angular-animate.js')
+      .pipe(gulp.dest('./builds/development/libs/angular/'));
+
+  gulp.src('./bower_components/angular-cookies/angular-cookies.js')
+      .pipe(gulp.dest('./builds/development/libs/angular/'));
+
+  gulp.src('./bower_components/angular-i18n/angular-locale_ru-ru.js')
+      .pipe(gulp.dest('./builds/development/libs/angular/'));
+
+  gulp.src('./bower_components/angular-loader/angular-loader.js')
+      .pipe(gulp.dest('./builds/development/libs/angular/'));
+
+  gulp.src('./bower_components/angular-resource/angular-resource.js')
+      .pipe(gulp.dest('./builds/development/libs/angular/'));
+
+  gulp.src('./bower_components/angular-route/angular-route.js')
+      .pipe(gulp.dest('./builds/development/libs/angular/'));
+
+  gulp.src('./bower_components/angular-sanitize/angular-sanitize.js')
+      .pipe(gulp.dest('./builds/development/libs/angular/'));
+
+  gulp.src('./bower_components/angular-touch/angular-touch.js')
+      .pipe(gulp.dest('./builds/development/libs/angular/'));
 });
 
 
@@ -53,6 +83,7 @@ gulp.task('default', [
   'copyjquery',
   'copybootstrap',
   'copybootstrapmaterialdesign',
+  'copyangular',
   'watch',
   'html',
   'app',
