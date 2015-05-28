@@ -8,7 +8,7 @@ $ bower install
 $ npm install
 $ gulp
 ```
-# Gulp-Project-Angular
+# Structure
 <pre>
 ├──  builds/
 │   ├──  development/
