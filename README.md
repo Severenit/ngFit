@@ -33,7 +33,6 @@ $ gulp
 ├──  bower_components/
 ├──  node_modules/
 ├──  .gitignore
-├──  .jshintrc
 ├──  bower.json
 ├──  gulpfile.js
 ├──  package.json
