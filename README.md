@@ -13,6 +13,7 @@
 │   │   │   │   │   ├──  main.controller.spec.js
 │   │   │   │   │   └──  main.html
 │   │   │   │   └──  app.js
+│   │   │   ├──  libs/
 │   │   │   ├──  img/
 │   │   │   ├──  css/
 │   │   │   ├──  fonts/
