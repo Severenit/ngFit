@@ -10,20 +10,19 @@
 │   │   │   │   │   │   └──  navbar.html
 │   │   │   │   ├──  main/
 │   │   │   │   │   ├──  main.controller.js
-│   │   │   │   │   ├──  main.controller.spec.js
 │   │   │   │   │   └──  main.html
 │   │   │   │   └──  app.js
-│   │   │   ├──  libs/
-│   │   │   ├──  img/
 │   │   │   ├──  css/
 │   │   │   ├──  fonts/
+│   │   │   ├──  img/
+│   │   │   ├──  libs/
 │   │   │   ├──  sass/
 │   │   │   │   ├──  includes/
-│   │   │   │   │   └──  varibles.scss
+│   │   │   │   │   └──  _varibles.scss
 │   │   │   │   └──  styles.scss
 │   │   │   └──  index.html
 ├──  bower_components/
-├──  nodes_modules/
+├──  node_modules/
 ├──  .gitignore
 ├──  .jshintrc
 ├──  bower.json
