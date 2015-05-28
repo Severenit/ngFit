@@ -1,4 +1,14 @@
+# ngFit App
 ![Building a ngFit App with AngularJS](ngFit.png)
+# Install
+```sh
+$ git clone https://github.com/Severenit/ngFit.git
+$ cd ngFit
+$ bower install
+$ npm install
+$ gulp
+```
+And open browser and go to http://localhost:8000/
 # Gulp-Project-Angular
 <pre>
 ├──  builds/
