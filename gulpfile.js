@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     csso = require('gulp-csso');
 
 gulp.task('app', function() {
-  gulp.src('builds/development/js/**/*')
+  gulp.src('builds/development/app/**/*')
 });
 
 gulp.task('html', function() {
