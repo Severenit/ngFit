@@ -1,0 +1,16 @@
+@mixin media($group, $id: general, $customRule: ""){
+  @each $media in $media-stack{
+    @if($group == map-get($media, group) and $id == map-get($media, id)){
+      $rule: map-get($media, rule);
+      @media #{$rule}#{$customRule} {@content}
+    }
+  }
+}
+//@mixin media($group, $id: general, $customRule: "") {
+//  @each $media in $media-stack {
+//    @if($group == map-get($media, group) and $id == map-get($media, id)) {
+//      $rule: map-get($media, rule);
+//      @media #{$rule} #{$customRule} {@content}
+//    }
+//  }
+//}

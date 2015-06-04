@@ -1,0 +1,93 @@
+// Color Function
+$color-stack:
+  (group: white, id: normal, color: #FFFFFF),
+  (group: black, id: normal, color: #000000),
+  (group: red, id: normal, color: #f44336),
+  (group: pink, id: normal, color: #e91e63),
+  (group: purple, id: normal, color: #9c27b0),
+  (group: deeppurple, id: normal, color: #673ab7),
+  (group: indigo, id: normal, color: #3f51b5),
+  (group: blue, id: normal, color: #2196f3),
+  (group: lightblue, id: normal, color: #03a9f4),
+  (group: cyan, id: normal, color: #00bcd4),
+  (group: teal, id: normal, color: #00968E),
+  (group: teal, id: 50, color: #e0f2f1),
+  (group: teal, id: 100, color: #b2dfdb),
+  (group: teal, id: 200, color: #80cbc4),
+  (group: teal, id: 300, color: #4db6ac),
+  (group: teal, id: 400, color: #26a69a),
+  (group: teal, id: 500, color: #009688),
+  (group: teal, id: 600, color: #00897b),
+  (group: teal, id: 700, color: #00796b),
+  (group: teal, id: 800, color: #00695c),
+  (group: teal, id: 900, color: #004d40),
+  (group: teal, id: A100, color: #a7ffeb),
+  (group: teal, id: A200, color: #64ffda),
+  (group: teal, id: A400, color: #1de9b6),
+  (group: teal, id: A700, color: #00bfa5),
+  (group: green, id: normal, color: #4caf50),
+  (group: lightgreen, id: normal, color: #8bc34a),
+  (group: lime, id: normal, color: #cddc39),
+  (group: yellow, id: normal, color: #ffeb3b),
+  (group: amber, id: normal, color: #ffc107),
+  (group: orange, id: normal, color: #ff9800),
+  (group: deeporange, id: normal, color: #ff5722),
+  (group: brown, id: normal, color: #795548),
+  (group: gray, id: normal, color: #9e9e9e),
+  (group: gray, id: 50, color: #fafafa),
+  (group: gray, id: 100, color: #f5f5f5),
+  (group: gray, id: 200, color: #eeeeee),
+  (group: gray, id: 300, color: #e0e0e0),
+  (group: gray, id: 400, color: #bdbdbd),
+  (group: gray, id: 500, color: #9e9e9e),
+  (group: gray, id: 600, color: #757575),
+  (group: gray, id: 700, color: #616161),
+  (group: gray, id: 800, color: #424242),
+  (group: gray, id: 900, color: #212121),
+  (group: bluegrey, id: normal, color: #688897),
+  (group: bluegrey, id: 50, color: #eceff1),
+  (group: bluegrey, id: 100, color: #cfd8dc),
+  (group: bluegrey, id: 200, color: #b0bec5),
+  (group: bluegrey, id: 300, color: #90a4ae),
+  (group: bluegrey, id: 400, color: #78909c),
+  (group: bluegrey, id: 500, color: #607d8b),
+  (group: bluegrey, id: 600, color: #546e7a),
+  (group: bluegrey, id: 700, color: #455a64),
+  (group: bluegrey, id: 800, color: #37474f),
+  (group: bluegrey, id: 900, color: #263238);
+//=== Exsample ===
+// background: color(orange, pale,.4);
+// Fonts Function
+$font-stack:
+  (group: brandon, id: light, font: ('Brandon Grot W01 Light', san-serif ), weight: 200, style: normal),
+  (group: brandon, id: light-italic, font: ('Brandon Grot W01 Light', san-serif ), weight: 200, style: italic),
+  (group: brandon, id: regular, font: ('Brandon Grot W01-Regular', san-serif), weight: 400, style: normal),
+  (group: brandon, id: regular-italic, font: ('Brandon Grot W01-Regular', san-serif), weight: 400, style: italic),
+  (group: brandon, id: bold, font: ('Brandon Grot W01 Black', san-serif), weight: 700, style: normal),
+  (group: brandon, id: bold-italic, font: ('Brandon Grot W01-Regular', san-serif), weight: 400, style: italic),
+  (group: clarendon, id: regular, font: ('Clarendon LT W01', serif), weight: 200, style: normal),
+  (group: code, id: regular, font: (monospace), weight: 400, style: normal);
+//=== Exsample ===
+// @include font(brandon, regular-italic);
+// Breakpoint Mixin
+$media-stack:
+  (group: phone, id: general, rule: "only screen and (min-device-width: "+$screen-xs+")"),
+  (group: tablet, id: general, rule: "only screen and (min-device-width: "+$screen-sm+")"),
+  (group: desktop, id: general, rule: "only screen and (min-device-width: "+$screen-md+")"),
+  (group: desktop, id: wide, rule: "only screen and (min-device-width: "+$screen-lg+")"),
+  (group: small, id: inbetween, rule: "only screen and (min-device-width: 1100px) and (max-device-width: 1400px)"),
+  (group: print, id: general, rule: "only print"),
+  (group: custom, id: screen, rule: "only screen and");
+//=== Exsample ===
+//  @include media(phone, general){
+//    @content
+//  };
+//  @include media(tablet, general){
+//    @content
+//  };
+//  @include media(desktop, general){
+//    @content
+//  };
+//  @include media(desktop, wide){
+//    @content
+//  };
