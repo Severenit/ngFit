@@ -49,6 +49,7 @@ All values are stored in a file ***builds/development/sass/includes/_stack.scss*
 │   │   │   │   │   └──  main.html
 │   │   │   │   └──  app.js
 │   │   │   ├──  fonts/
+│   │   │   ├──  css/
 │   │   │   ├──  img/
 │   │   │   ├──  libs/
 │   │   │   ├──  sass/
