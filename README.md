@@ -16,7 +16,7 @@ Use function in scss "color( **name_color** , **type_color** , **opacity_color**
 Number 2 and 3 it's optional value, if you don't set them, set will be the normal value and 1 for opacity
 ### Example
 ```sh
-background: color(teal, normal,.6);
+background: **color(teal, normal,.6);**
 ```
 ## Use Fonts Mixin
 Include mixin in scss "@include font( **name_font** , **type_font** );"
