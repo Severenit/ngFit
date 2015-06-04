@@ -48,12 +48,14 @@ All values are stored in a file ***builds/development/sass/includes/_stack.scss*
 │   │   │   │   │   ├──  main.controller.js
 │   │   │   │   │   └──  main.html
 │   │   │   │   └──  app.js
-│   │   │   ├──  css/
 │   │   │   ├──  fonts/
 │   │   │   ├──  img/
 │   │   │   ├──  libs/
 │   │   │   ├──  sass/
 │   │   │   │   ├──  includes/
+│   │   │   │   │   ├──  mixins/...
+│   │   │   │   │   ├──  _mixins.scss
+│   │   │   │   │   ├──  _stack.scss
 │   │   │   │   │   └──  _varibles.scss
 │   │   │   │   └──  styles.scss
 │   │   │   └──  index.html

@@ -55,7 +55,7 @@ $color-stack:
   (group: bluegrey, id: 700, color: #455a64),
   (group: bluegrey, id: 800, color: #37474f),
   (group: bluegrey, id: 900, color: #263238);
-//=== Exsample ===
+//=== Example ===
 // background: color(orange, pale,.4);
 // Fonts Function
 $font-stack:
@@ -67,7 +67,7 @@ $font-stack:
   (group: brandon, id: bold-italic, font: ('Brandon Grot W01-Regular', san-serif), weight: 400, style: italic),
   (group: clarendon, id: regular, font: ('Clarendon LT W01', serif), weight: 200, style: normal),
   (group: code, id: regular, font: (monospace), weight: 400, style: normal);
-//=== Exsample ===
+//=== Example ===
 // @include font(brandon, regular-italic);
 // Breakpoint Mixin
 $media-stack:
@@ -78,7 +78,7 @@ $media-stack:
   (group: small, id: inbetween, rule: "only screen and (min-device-width: 1100px) and (max-device-width: 1400px)"),
   (group: print, id: general, rule: "only print"),
   (group: custom, id: screen, rule: "only screen and");
-//=== Exsample ===
+//=== Example ===
 //  @include media(phone, general){
 //    @content
 //  };
