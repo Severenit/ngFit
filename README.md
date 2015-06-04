@@ -32,6 +32,10 @@ Include mixin in scss "@include media( **name_media** ,  **type_media** ) { @con
   @content
 };
 ```
+## Your Own Mixin Value
+You can use your own mixin value, making all similar.
+
+All values are stored in a file *builds/development/sass/includes/_stack.scss*
 # Structure
 <pre>
 ├──  builds/
