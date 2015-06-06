@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     csso = require('gulp-csso');
     
-var bower_components = './bower_components/';
+var bc = './bower_components/';
 
 gulp.task('app', function() {
   gulp.src('builds/development/app/**/*')
@@ -31,24 +31,24 @@ gulp.task('watch', function() {
 });
 
 gulp.task('libs', function() {
-  gulp.src(bower_components+'jquery/dist/jquery.js')
+  gulp.src(bc+'jquery/dist/jquery.js')
       .pipe(gulp.dest('./builds/development/libs/jquery/'));
 
-  gulp.src(bower_components+'bootstrap/dist/**/*.*')
+  gulp.src(bc+'bootstrap/dist/**/*.*')
       .pipe(gulp.dest('./builds/development/libs/bootstrap/'));
 
-  gulp.src(bower_components+'bootstrap-material-design/dist/**/*.*')
+  gulp.src(bc+'bootstrap-material-design/dist/**/*.*')
       .pipe(gulp.dest('./builds/development/libs/bootstrap-material-design/'));
 
-  gulp.src([bower_components+'angular/angular.js',
-            bower_components+'angular-animate/angular-animate.js',
-            bower_components+'angular-cookies/angular-cookies.js',
-            bower_components+'angular-i18n/angular-locale_ru-ru.js',
-            bower_components+'angular-loader/angular-loader.js',
-            bower_components+'angular-resource/angular-resource.js',
-            bower_components+'angular-route/angular-route.js',
-            bower_components+'angular-sanitize/angular-sanitize.js',
-            bower_components+'angular-touch/angular-touch.js',
+  gulp.src([bc+'angular/angular.js',
+            bc+'angular-animate/angular-animate.js',
+            bc+'angular-cookies/angular-cookies.js',
+            bc+'angular-i18n/angular-locale_ru-ru.js',
+            bc+'angular-loader/angular-loader.js',
+            bc+'angular-resource/angular-resource.js',
+            bc+'angular-route/angular-route.js',
+            bc+'angular-sanitize/angular-sanitize.js',
+            bc+'angular-touch/angular-touch.js',
           ])
       .pipe(gulp.dest('./builds/development/libs/angular/'));
 });
@@ -63,9 +63,9 @@ gulp.task('webserver', function() {
 
 gulp.task('default', [
   'libs',
+  'watch',
   'html',
   'app',
   'sass',
-  'webserver',
-  'watch'
+  'webserver'
 ]);
