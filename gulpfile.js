@@ -9,11 +9,14 @@ var gulp = require('gulp'),
 var bc = './bower_components/';
 
 gulp.task('app', function() {
-  gulp.src('builds/development/app/**/*')
+  gulp.src('builds/development/app/**/*.js')
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest('builds/dist/app/'))
 });
 
 gulp.task('html', function() {
   gulp.src('builds/development/**/*.html')
+    .pipe(gulp.dest('builds/dist/'))
 });
 
 gulp.task('sass', function () {
@@ -21,7 +24,7 @@ gulp.task('sass', function () {
       .pipe(sass())
       .pipe(concat('style.min.css'))
       .pipe(csso())
-      .pipe(gulp.dest('builds/development/css/'));
+      .pipe(gulp.dest('builds/dist/css/'));
 });
 
 gulp.task('watch', function() {
@@ -32,13 +35,13 @@ gulp.task('watch', function() {
 
 gulp.task('libs', function() {
   gulp.src(bc+'jquery/dist/jquery.js')
-      .pipe(gulp.dest('./builds/development/libs/jquery/'));
+      .pipe(gulp.dest('./builds/dist/libs/jquery/'));
 
   gulp.src(bc+'bootstrap/dist/**/*.*')
-      .pipe(gulp.dest('./builds/development/libs/bootstrap/'));
+      .pipe(gulp.dest('./builds/dist/libs/bootstrap/'));
 
   gulp.src(bc+'bootstrap-material-design/dist/**/*.*')
-      .pipe(gulp.dest('./builds/development/libs/bootstrap-material-design/'));
+      .pipe(gulp.dest('./builds/dist/libs/bootstrap-material-design/'));
 
   gulp.src([bc+'angular/angular.js',
             bc+'angular-animate/angular-animate.js',
@@ -50,11 +53,11 @@ gulp.task('libs', function() {
             bc+'angular-sanitize/angular-sanitize.js',
             bc+'angular-touch/angular-touch.js',
           ])
-      .pipe(gulp.dest('./builds/development/libs/angular/'));
+      .pipe(gulp.dest('./builds/dist/libs/angular/'));
 });
 
 gulp.task('webserver', function() {
-  gulp.src('builds/development/')
+  gulp.src('builds/dist/')
       .pipe(webserver({
         livereload: true,
         open: true
@@ -63,9 +66,9 @@ gulp.task('webserver', function() {
 
 gulp.task('default', [
   'libs',
-  'watch',
   'html',
   'app',
   'sass',
-  'webserver'
+  'webserver',
+  'watch'
 ]);
