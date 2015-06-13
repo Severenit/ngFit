@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     
 var bc = './bower_components/';
 
-gulp.task('app', function() {
+gulp.task('js', function() {
   gulp.src('builds/development/app/**/*.js')
     .pipe(concat('app.js'))
     .pipe(gulp.dest('builds/dist/app/'))
@@ -27,10 +27,16 @@ gulp.task('sass', function () {
       .pipe(gulp.dest('builds/dist/css/'));
 });
 
+gulp.task('img', function() {
+  gulp.src('builds/development/img/**/*')
+    .pipe(gulp.dest('builds/dist/img/'));
+});
+
 gulp.task('watch', function() {
-  gulp.watch('builds/development/app/**/*', ['app']);
-  gulp.watch('builds/development/sass/**/*', ['sass']);
+  gulp.watch('builds/development/app/**/*.js', ['js']);
+  gulp.watch('builds/development/sass/**/*.scss', ['sass']);
   gulp.watch('builds/development/**/*.html', ['html']);
+  gulp.watch('builds/development/img/**/*', ['img']);
 });
 
 gulp.task('libs', function() {
@@ -67,7 +73,8 @@ gulp.task('webserver', function() {
 gulp.task('default', [
   'libs',
   'html',
-  'app',
+  'img',
+  'js',
   'sass',
   'webserver',
   'watch'
