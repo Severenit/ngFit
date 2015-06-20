@@ -61,7 +61,7 @@ gulp.task('libs', function() {
             bc+'firebase/firebase.js',
             bc+'angularfire/dist/angularfire.js',
           ])
-      .pipe(concat('libs.js'))
+      .pipe(concat('angular.concat.js'))
       .pipe(gulp.dest('./builds/dist/libs/angular/'));
 });
 
