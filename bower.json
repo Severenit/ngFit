@@ -28,7 +28,7 @@
     "angular-cookies": "~1.4.0",
     "angular-touch": "~1.4.0",
     "angular-loader": "~1.4.0",
-    "angular-i18n": "~1.4.0"
+    "angular-i18n": "~1.4.0",
     "firebase": "~2.2.7",
     "angularfire": "~1.1.1"
   }
